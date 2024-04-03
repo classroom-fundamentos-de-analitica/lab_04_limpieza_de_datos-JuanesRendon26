@@ -49,6 +49,6 @@ def clean_data():
     df[duplicados].sort_values(by='barrio')
     
     df.drop_duplicates(inplace=True)
-    return df['idea_negocio'].value_counts()
+    return df
 
 print(clean_data())
